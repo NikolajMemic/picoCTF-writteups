@@ -1,0 +1,29 @@
+Completed 7 CTF-s
+1.) Inspect HTML
+- simple inspection on page html source
+
+2.) Unminify
+- had to unminify text to find flag
+- learned about unmimify websites
+
+3.) WebDecode
+- had to inspect an html page to find a long string
+- learned about Base64 encoding and decoded it using atob js function in console
+
+4.) IntroToBurp
+- installed and learned how to intercept traffic from client to host 
+- deleted a code for 2fa due to poor server config code got the flag
+
+5.) Local Authority
+- inserted dummy data into the login, it took me to the login failed page
+- inspected the page and found a reference to secure.js where credentials were held
+
+6.) Crack the Gate 1 (Daily favourite)
+- Inspected the page and saw a weird sequence of characters
+- learnt about rot13 decoding 
+- decoded info was the temporary bypass header
+- on Burp i added the header before sending the login credentials
+
+7.) Log Hunt 
+- solved it via ctrl f 
+- probably shouldve used some linux here 
