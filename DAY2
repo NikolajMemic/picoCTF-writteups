@@ -1,0 +1,18 @@
+1) Bookmarklet
+- i learned that you can execute js code instead of pasting a link
+- since it didn't let me execute it in browser i learnt that a console exists on web tools
+
+2) Includes
+- one of the worse challanges so far... half a flag was in index and half of it was in js script
+- it was explaining what Includes is (content of file 2 being inserted into file 1) yet solution was to just check the external files, i probably missed the point here
+
+3) SSTI1
+- first CTF that i had to look up a solution for since i didn't know what to insert after i learnt what SSTI was
+- probably should've learnt how to recognise the language behind the server and how to make a fitting payload 
+- at the very least i know what a SSTI is now 
+
+4) Cookie Monster Secret Recipe
+- had to inspect the page for cookies and decode a base64 string for flag
+- not a hard challange overall
+
+5)
