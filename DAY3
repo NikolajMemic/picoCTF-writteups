@@ -1,0 +1,5 @@
+Started using kali
+1) Heap Dump
+- found the API docs section and looked at API documentation
+- saw heapdump section, clicked on it and downloaded the snapshot 
+- after doing so i used strings command along with grep to filter for the flag string 
