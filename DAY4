@@ -54,5 +54,33 @@ i learned:
 //
 - flag: picoCTF{3v3ry1_l0v3s_c00k135_a4dadb49}
 
-/////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
 With this report i finish all of the easy web challanges on picoCTF
+///////////////////////////////////////////////////////////////////
+
+General skills part 
+
+1) Obedient cat
+- downloaded the file and flag was there
+// 
+- flag: picoCTF{s4n1ty_v3r1f13d_9b8fa0bc} 
+
+2) Lets warm up
+- got a hint that it started on 0x70 in hex so i just typed flag format and ascii value of the hex number
+//
+- flag: picoCTF{p}
+
+3) 2warm
+- had to convert decimal to bin and submit flag in the format
+//
+- flag: picoCTF{101010}
+
+4) Warmed up
+- had to convert hex to bin and insert it into a flag
+//
+- flag: picoCTF{61}
+
+5) Bases
+- had to conver a string from base 64 and put it into a flag
+//
+- flag: picoCTF{l3arn_th3_r0p35}
