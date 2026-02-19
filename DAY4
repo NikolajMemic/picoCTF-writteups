@@ -1,0 +1,5 @@
+1) Where are the robots
+- when i saw the title it was preety clear to me it had something to do with robots.txt
+- i took a look inside it and saw User-agent: *Disallow: /cc6b1.html
+- if the creators don't want bots to sniff around the given file it probably has a flag in it
+- i typed the files name and found the flag which was this: picoCTF{ca1cu1at1ng_Mach1n3s_cc6b1}
