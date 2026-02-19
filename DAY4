@@ -2,4 +2,57 @@
 - when i saw the title it was preety clear to me it had something to do with robots.txt
 - i took a look inside it and saw User-agent: *Disallow: /cc6b1.html
 - if the creators don't want bots to sniff around the given file it probably has a flag in it
-- i typed the files name and found the flag which was this: picoCTF{ca1cu1at1ng_Mach1n3s_cc6b1}
+- i typed the files name and found the flag
+//
+- flag: picoCTF{ca1cu1at1ng_Mach1n3s_cc6b1}
+
+2) GET aHEAD 
+- i inspected the webpage and found nothing special
+- after i checked what happens when i add a flag value in request and didn't get anything valuable
+- after a while of screwing around with burpsuite and logs i asked gemini for a push and learned there was more methods than just get and post
+- after that i used a command curl -I url for which outputed all of the headers where the flag was hiding
+//
+i learned:
+- theres more methods then just get and post
+- i learnt to use the command curl for seing the headers of a webpage
+- get and head can have diffrent outputs with headers depends on what you code it to answer
+// 
+- flag: picoCTF{r3j3ct_th3_du4l1ty_8b13f07}
+
+3) dont-use-client-side (Worst of the day)
+- i inspected the page and found suspicius function verify 
+- it looked like that: if (checkpass.substring(split*6, split*7) == 'eb02') but for all of the segments
+- i arranged them in order and got the flag out of it
+- didn't learn anything
+//
+- flag: picoCTF{no_clients_plz_2eb02b45}
+
+4) Scavanger hunt (Daily favourite)
+- i inspected the source of a page and found 1 5th of flag
+- 2nd fragment was in a css file
+- in js file was a hint on how to prevent google from indexing their website, i knew it was the robots.txt and got the 3rd fragment and a further hint server was on apache
+- tried the classic /admin but no luck, since that was all i knew about exploiting apache i asked gemini about the classic exploits of apache server and got informed about .htaccess file
+- i didn't check it right off because something else caught my eye i saw something about gobuster and read what it was so for fun i tried discovering all directories where flag could be and it lead me to .htaccess file
+- in the .htaccess file i found my 4th fragment and a hint about user using mac, since i had no clue about why that would matter i researched and found out that if apache is running on mac it isnt case sensitive and that theres a file named .DS_Store
+- i checked the .DS_Store and found my last fragment there
+// 
+i learned:
+- how to use the gobuster tool
+- about .htaccess and .DS_Store files
+- its important what your webserver your site is running on and what OS you have server on
+//
+- flag: picoCTF{th4ts_4_l0t_0f_pl4c3s_2_lO0k_9588550}
+
+5) Cookies
+- went to storage to check if theres anything under cookies section, found a value that was -1
+- after that i typed a placeholder value to see what happens and cookie value changed from -1 to 0
+- i went to burpsuite to alter the header named cookie to 1 and the website loaded with chocolate chip cookies, that meant i could access diffrent pages with diffrent values in the given header
+- when i entered value 18 i saw the flag page appear
+//
+i learned: 
+- you don't need burpsuite to change cookie value 
+//
+- flag: picoCTF{3v3ry1_l0v3s_c00k135_a4dadb49}
+
+/////////////////////////////////////////////////
+With this report i finish all of the easy web challanges on picoCTF
