@@ -1,0 +1,30 @@
+1) strings it
+- i downloaded the file and used strings command along with grep to filter for picoCTF
+// 
+- command: strings strings | grep 'picoCTF'
+//
+- flag: picoCTF{5tRIng5_1T_47948C73}
+//
+learned nothing but it was a great warmup
+
+2)First grep (it wasnt)
+- same as 1st one just wanted to get this one out of the way
+//
+- flag: picoCTF{grep_is_good_to_find_things_29f42460}
+
+3)Wave a flag
+- description said that the file had useful information
+- i installed the file, gave it permision for executing and executed it
+- after that it said that -h is used to get help
+- after running ./warm -h i got the flag
+//
+- commands used: 
+      - chmod + x warm
+      - ./warm
+      - ./warm -h
+//
+- flag: picoCTF{b1scu1ts_4nd_gr4vy_ac5832c}
+//
+- i learned that ./file exectues the file
+
+4)
