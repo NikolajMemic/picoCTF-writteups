@@ -27,4 +27,25 @@ learned nothing but it was a great warmup
 //
 - i learned that ./file exectues the file
 
-4)
+4) what's a net cat
+- description of the problem told me to use netcat to access the flag at a specific port
+- i typed the nc command and got the flag
+//
+- command i used: nc fickle-tempest.picoctf.net 54613
+//
+- what i learned:
+      - i learned how to connect to a port on a server with netcat
+      - learned that netcat exists and is a super usefull networking tool
+//
+- flag: picoCTF{nEtCat_Mast3ry_5BBB6400} 
+
+5) nice netcat
+- description told me to nc to the given url
+- when i did it spat out some numbers that were between 10 and 130 
+- i had already worked with ascii so i knew it had to do with it so i converted the base10 to ascii and got the flag
+//
+- command i used: nc fickle-tempest.picoctf.net 54749
+//
+- flag: picoCTF{g00d_k1tty!_n1c3_k1tty!_195fe}
+
+
