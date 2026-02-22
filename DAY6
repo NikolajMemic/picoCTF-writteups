@@ -1,0 +1,57 @@
+1) Tab, Tab, Attack
+- i downloaded a zip file and unziped it
+- i saw a directory and went in there, there were directories inside directories so i just kept pressing tab
+- when i came to last directory i exectued afile within it and got the flag
+//
+- commands used:
+  -unzip
+  -cd 
+  ./
+//
+- flag: picoCTF{l3v3l_up!_t4k3_4_r35t!_fc588427}
+
+2) Static isn't alaways noise
+- i was given 2 files so i downloaded both of them
+- one was .sh other was a binary executable file, though i found the file with just the cat command i still wanted to solve the challange the intended way
+- i gave permision x to the .sh file and ran it with target file being static 
+- after i did it i got 2 extra files in my directory
+- fles were: static.ltdis.x86_64.txt and static.ltdis.strings.txt
+- i found the flag in strings.txt with cat, could have also used strings with grep
+- flag was on the adress 0x3020
+//
+- commands i used:
+  -cat
+  -chmod + x
+  - ./file.sh targetfile
+//
+- what i learned: 
+  - i learned what binary executable looks like
+  - i learned that you can reverse it into disasembled binary executable aka assembly
+  - the .txt file i recived looked like adresses in memmory and what they referenced
+//
+- flag: picoCTF{d15a5m_t34s3r_20335e41} 
+// 
+- comment: Found this challange fun and usefull, it introduced me to reverse engineering and assembly
+
+3) Magikarp Ground Mission
+- i was provided url, user name and password
+- i used ssh to connect to the server 
+- used command ls to chekc whats in my directory
+- found the 1outof3flag.txt file and checked it, found 1rd of flag and further instructions
+- i followed instructions and did that again on root and home directory
+//
+- commands i used: 
+  - ssh user@url port
+  - cat
+  - cd
+//
+- flag: picoCTF{xxsh_0ut_0f_//4t3r_0b24fc4f}
+
+4) Codebook
+- i was provided 2 files and downladed them
+- i ran the py file and got the flag...
+\\
+- flag: picoCTF{c0d3b00k_455157_7d102d7a}
+
+
+
