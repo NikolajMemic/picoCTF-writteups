@@ -53,5 +53,38 @@
 \\
 - flag: picoCTF{c0d3b00k_455157_7d102d7a}
 
+5) convertme.py
+- had to run the script and convert to bin to get the flag...
+//
+- flag: picoCTF{4ll_y0ur_b4535_9c3b7d4d}
+
+6) fixme.py
+- i downloaded the file
+- used nano command to enter and alter it
+- problem was that print was indented at the end
+//
+- commands used: nano
+// 
+- flag: picoCTF{1nd3nt1ty_cr1515_182342f7}
+
+7) fixme2.py
+- same as the first one but problem was comparing 2 variables in if with = instead of ==
+//
+- flag: picoCTF{3qu4l1ty_n0t_4551gnm3nt_e8814d03}
+
+8) Glitch cat
+- i was provided a nc command with ip and port
+- when i entered the command i saw a part of flag and appending ascii values that were hex such as chr(0x23)
+- i converted all of the append values to ascii and finished the flag
+//
+flag: picoCTF{gl17ch_m3_n07_9c42a45d}
+
+9) HashingJobApp
+- i was provided nc url and port'
+- i connected and it wanted me to hash certain words with MD5 for a flag
+//
+- flag: picoCTF{4ppl1c4710n_r3c31v3d_3eb82b73}
+
+
 
 
