@@ -1,0 +1,26 @@
+This is session 7 of solving CTF's on picoCTF
+Days are meant as sessions not consecutive solving days
+
+1) Python Wrangling
+// Challange
+- I was provided an ende.py , password.txt file and a flag.txt.en
+- To solve the issue I tried running python3 ende.py flag.txt.en 
+- program warned me to use -e/-d, after looking it up i found that -e stands for encryption and -d for decryption
+- afterwards i ran python3 ende.py -d flag.txt.en and manualy pasted the password from the password.txt file into it and got the flag
+// Flag
+- picoCTF{4p0110_1n_7h3_h0us3_9c5f9bcf}
+// What i learned
+- after i had completed the challange i looked up how i could insert password without pasting it and remembered redirections exist
+
+2) Plumbing
+// Challange
+- I was given an adress and a port number fickle-tempest.picoctf.net 53221 
+- I tried to SSH to the connection but it wouldn't let me in
+- After that i tired using net cat to see the paylolad of packets and found a wall of text
+- After filtering it with grep command i found the flag 
+// Command
+- fickle-tempest.picoctf.net 53221 | grep pico
+// What i learned
+- I refreshed the knowledge of what netcat is
+
+3)
