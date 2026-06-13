@@ -30,3 +30,11 @@ done <clean_passwords.txt
 and <<< "$password" is a variable from the while loop i am passing into the script after it executes in this case.
 //
 - overall super valuable challange and learning experience 
+
+3) PW crack 5
+- identical to PW crack 4 but i was provided a dictionary for passwords
+- should have remodeled the py script itself so bash wouldnt have to run the script 65536 times 
+- my solution was silly and unoptimal but still got the result
+//
+flag: picoCTF{h45h_sl1ng1ng_40f26f81}
+
