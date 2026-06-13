@@ -1,0 +1,32 @@
+This is day 8 of solving picoCTF challanges
+
+1) PW crack 3
+- i was provided 3 files to begin with a python script, pass.txt file and bash.bin file
+- i took a look into the script and saw 2 variables getting values from the 2 other files
+- scrolled down and stumbled upon possible passwords
+- ran the script several times and cracked the password
+//
+- flag: picoCTF{m45h_fl1ng1ng_2b072a90}
+//
+- should have used an automated script to go through the file multiple times with diffrent passwords
+
+2) PW crack 4
+- the challange was identical to PW crack 3 with the exception of being 100 possible solutions
+- it was a great opportunity to solidify my pipe and redirection skills in linux
+- with the tr command i replaced spaces with new lines and removed " and ,
+- command:  tr ' ' '\n' < raw_passwords.txt  | tr -d '" ,' > clean_passwords.txt 
+- after that i wanted to automate the process of running the script and insering the passwords after the command ran
+- i asked gemini to teach me shell scripting and i also wrote my 1st script myself
+- this is the following script:
+while read -r password; do
+  python3 level4.py >>results.txt <<<"$password"
+done <clean_passwords.txt
+- after i gave it rights and ran it i used cat results.txt | grep pico to find the flag
+//
+-flag: picoCTF{fl45h_5pr1ng1ng_d770d48c}
+//
+- i learned about the shell scripting
+- python3 level4.py >>results.txt <<<"$password" the 1st argument is a command i executed, on the middle is the file i am outputing the result from a command to with >> and 
+and <<< "$password" is a variable from the while loop i am passing into the script after it executes in this case.
+//
+- overall super valuable challange and learning experience 
