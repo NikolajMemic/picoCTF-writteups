@@ -1,0 +1,7 @@
+This is day 9 of solving challanges on picoCTF
+
+1) vault-door-training
+- i was provided source code of a java file 
+- inside there was a hardcoded password for the door and a substring java method that indicated the password was inbetweeen the picoCTF{} format
+//
+flag: picoCTF{w4rm1ng_Up_w1tH_jAv4_000uMfhzBuS}
