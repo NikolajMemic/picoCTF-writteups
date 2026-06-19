@@ -1,0 +1,29 @@
+This is day 10 of documetning my picoCTF progress
+
+1) Enhance!
+- i was provided a svg file
+- i found out that svg-s are written in xml so decided to open it with an editor
+- i took a look at the code and found the flag
+//
+flag: picoCTF{3nh4nc3d_24374675}
+
+2) keygenme-py
+- I was given a python file
+- I found the static part of the file and dynamic part it looked like picoCTF{1n_7h3_kk3y_of_xxxxxxxx}
+- I inspected further and found some kind of menu
+- I figured out only one of options was useful and it was c and it said enter the license
+- I found the enter_license function and check_password inside. 
+- check_password had this code:
+
+if key[i] != hashlib.sha256(username_trial).hexdigest()[5]:
+            return False
+
+- Since username was hardcoded i made a java program to encode the name BENNETT in my case to sha256 
+- When i had that string i just searched through it with the indexes in order they were in the original code
+
+//
+flag: picoCTF{1n_7h3_kk3y_of_08c46aa4}
+//
+- This was one of harder CTF-s till now
+- I needed AI for JAVA code since i didn't know the class for encoding sha256 and i wasn't in a mood for looking it up after such long time of figuring other stuff out
+- I learnt that not all the code is useful for voulnerability exploiting only specific parts
